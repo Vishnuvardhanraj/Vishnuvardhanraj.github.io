@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Vishnuvardhan Raj — Data Analyst</title>
+<meta name="description" content="Turning data into insights, and insights into meaningful decisions. SQL, Python, Excel and Power BI.">
+<meta name="theme-color" content="#ffffff">
+<meta property="og:title" content="Vishnuvardhan Raj — Data Analyst">
+<meta property="og:description" content="Turning data into insights, and insights into meaningful decisions.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230A0A0A'/%3E%3Crect x='7' y='16' width='4' height='9' rx='1' fill='%23fff'/%3E%3Crect x='14' y='10' width='4' height='15' rx='1' fill='%23fff'/%3E%3Crect x='21' y='6' width='4' height='19' rx='1' fill='%2345B649'/%3E%3C/svg%3E">
+<link rel="preload" href="fonts/outfit-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="nav-in">
+    <a class="logo" href="#top" aria-label="Home"><i class="ld"></i>Vishnuvardhan Raj</a>
+    <div class="nav-right" id="menu">
+      <a href="#top">Home</a>
+      <a href="#about">About me</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#skills">Skills</a>
+      <a href="#now">Now</a>
+      <a class="btn btn-out btn-sm" href="mailto:Vishnuvardhanraj.enla@gmail.com">Say hello</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- ============ HOME: HERO ============ -->
+<section class="band hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="pill reveal"><i class="gdot" id="statusDot"></i><span id="statusText">Available for work</span></p>
+      <p class="hi reveal"><span aria-hidden="true">👋</span> Hi! I’m Vishnuvardhan Raj &amp; your go-to</p>
+      <h1 class="reveal">Data Analyst</h1>
+      <p class="lead reveal">Turning data into insights, and insights into meaningful decisions.</p>
+      <!-- CLIENTS: one <li> per client. Add a line to add a client, delete a line to remove one.
+           Initials:       <li title="Client name">AB</li>
+           Logo or photo:  <li title="Client name"><img src="clients/name.webp" alt="Client name"></li>
+           No clients yet? Leave the list empty and this whole row hides itself.
+           The count text updates on its own; the row shows the first 6 and "+N" for the rest. -->
+      <div class="proof reveal" id="clients" hidden>
+        <ul class="avs" id="clientList" aria-label="Clients">
+        </ul>
+        <span id="clientText"></span>
+      </div>
+      <div class="cta reveal">
+        <a class="btn btn-ink" href="mailto:Vishnuvardhanraj.enla@gmail.com">Get Started</a>
+        <!-- TODO: point this to your CV (for example cv.pdf in this repo) -->
+        <!-- CV button hidden for now. When you have a CV, remove the comment marks: <a class="btn btn-out" href="cv.pdf">Download CV</a> -->
+      </div>
+      <p class="fine reveal">A jack of all trades is a master of none, but oftentimes better than a master of one.</p>
+    </div>
+
+    <div class="hero-art reveal" aria-hidden="true">
+      <svg class="art" viewBox="0 0 500 360" focusable="false">
+        <g fill="none" stroke="#0A0A0A" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+          <g class="fl f1"><circle cx="92" cy="96" r="36" fill="#fff"/><path d="M92 60a36 36 0 0 1 31 54" stroke="#45B649"/><circle cx="92" cy="96" r="9" fill="#0A0A0A" stroke="none"/></g>
+          <g class="fl f2"><rect x="322" y="34" width="132" height="88" rx="14" fill="#fff"/><path d="M340 100l22-26 20 12 28-36" stroke="#45B649"/><path d="M340 54h34M340 66h20" stroke="#0A0A0A" stroke-width="5"/></g>
+          <path d="M236 70v20M226 80h20" stroke="#45B649" stroke-width="4"/>
+          <path d="M40 150v14M33 157h14" stroke="#0A0A0A" stroke-width="4"/>
+          <path d="M452 190v14M445 197h14" stroke="#45B649" stroke-width="4"/>
+          <rect x="120" y="130" width="250" height="152" rx="14" fill="#fff"/>
+          <g stroke="none"><rect x="152" y="216" width="28" height="36" rx="5" fill="#0A0A0A"/><rect x="192" y="190" width="28" height="62" rx="5" fill="#0A0A0A"/><rect x="232" y="202" width="28" height="50" rx="5" fill="#0A0A0A"/><rect x="272" y="168" width="28" height="84" rx="5" fill="#0A0A0A"/><rect x="312" y="148" width="28" height="104" rx="5" fill="#45B649"/></g>
+          <path d="M90 284h310l-12 22a8 8 0 0 1-7 4H109a8 8 0 0 1-7-4Z" fill="#0A0A0A"/>
+        </g>
+        <g>
+          <path d="M30 304v-50h52v50a10 10 0 0 1-10 10H40a10 10 0 0 1-10-10Z" fill="#0A0A0A"/>
+          <path d="M30 266h-8a10 10 0 0 0 0 22h8" fill="none" stroke="#0A0A0A" stroke-width="6" stroke-linecap="round"/>
+          <text x="56" y="290" text-anchor="middle" font-size="15" font-weight="700" fill="#fff" font-family="Outfit,system-ui,sans-serif">SQL</text>
+          <path d="M418 304v-50h52v50a10 10 0 0 1-10 10h-32a10 10 0 0 1-10-10Z" fill="#0A0A0A"/>
+          <path d="M470 266h8a10 10 0 0 1 0 22h-8" fill="none" stroke="#0A0A0A" stroke-width="6" stroke-linecap="round"/>
+          <text x="444" y="290" text-anchor="middle" font-size="15" font-weight="700" fill="#45B649" font-family="Outfit,system-ui,sans-serif">Py</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TOOLS STRIP (swap for client logos any time) ============ -->
+<section class="band strip" aria-label="Tools I work with">
+  <p class="eyebrow center reveal">Tools I work with</p>
+  <div class="marquee reveal"><div class="marquee-track" id="marq">
+    <span>SQL</span><span>Python</span><span>Power BI</span><span>Tableau</span><span>Excel</span> <!--<span>Looker</span><span>R</span>--><span>Git</span><span>Jupyter</span>
+  </div></div>
+</section>
+
+<!-- ============ CAPABILITIES ============ -->
+<section class="band alt" id="capabilities">
+  <div class="wrap">
+    <h2 class="duo reveal"><span class="faded">Not Just a Report Builder,</span><br>I Deliver <span class="green">Decision-Ready</span> Insights</h2>
+    <p class="lead lead-dk reveal">I don’t just make charts. I work across data cleaning, SQL, modeling, dashboards, statistics and storytelling. That means I can take a vague question and hand back an answer your team can act on.</p>
+    <ol class="stepper reveal">
+      <li class="step" style="--d:0s"><i class="sdot"></i><h3>Data Cleaning</h3><p>Dedupe, validate and document messy exports into trusted tables.</p></li>
+      <li class="step" style="--d:.25s"><i class="sdot"></i><h3>SQL &amp; Modeling</h3><p>Readable queries, clear metric definitions and reusable views.</p></li>
+      <li class="step" style="--d:.5s"><i class="sdot"></i><h3>Dashboards &amp; BI</h3><p>Power BI, Tableau or Looker: one screen that answers the question.</p></li>
+      <li class="step" style="--d:.75s"><i class="sdot"></i><h3>Statistics</h3><p>A/B tests, regression and forecasting: signal, not noise.</p></li>
+      <li class="step" style="--d:1s"><i class="sdot"></i><h3>Storytelling</h3><p>Recommendations, summaries and walkthroughs people act on.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="band" id="projects">
+  <div class="wrap">
+    <p class="eyebrow reveal">Need proof? Here’s the work.</p>
+    <!-- TODO: replace title, text, numbers, tags and href="#" with your real projects -->
+    <article class="pcard reveal">
+      <div class="pbody">
+        <p class="cat">Retail analytics</p>
+        <h3>Retail Sales Dashboard</h3>
+        <p class="pdesc">Checked and cleaned 1,000 retail transactions in Excel, then built a Power BI dashboard that shows what sells, to whom and when.</p>
+        <div class="mrow"><div class="mtile"><span>Sales analysed</span><b>456K</b></div><div class="mtile"><span>Top buyers: senior adults</span><b>42.5%</b></div></div>
+        <ul class="pfind">
+          <li><b>Even split:</b> Electronics 34.4%, Clothing 34.1%, Beauty 31.5% of sales.</li>
+          <li><b>Seasonality:</b> May was the best month (53K) and September the weakest (24K).</li>
+          <li><b>Basket size:</b> young adults spend the most per order (500); older customers the least (357).</li>
+          <li><b>Data check:</b> all 1,000 totals reconcile (quantity × price), with no duplicates or gaps.</li>
+        </ul>
+        <ul class="ptags"><li>Power BI</li><li>Excel</li><li>Data cleaning</li></ul>
+        <a class="btn btn-out btn-sm" href="https://github.com/vvraj00480-debug/Retail_Sales_Analysis" target="_blank" rel="noopener">View project ↗</a>
+      </div>
+      <div class="pviz shot"><a href="https://github.com/vvraj00480-debug/Retail_Sales_Analysis" target="_blank" rel="noopener" aria-label="Open the Retail Sales project on GitHub"><img src="projects/retail-dashboard.webp" alt="Power BI dashboard: sales cards, sales by month, by category, by age group and by gender" width="1357" height="798" loading="lazy"></a></div>
+    </article>
+    <article class="pcard reveal">
+      <div class="pbody">
+        <p class="cat">E-commerce analytics</p>
+        <h3>Olist Delivery &amp; Reviews Analysis</h3>
+        <p class="pdesc">Cleaned and explored all 8 tables of the Brazilian Olist marketplace (99,441 orders) in Python to see how late deliveries affect customer ratings.</p>
+        <div class="mrow"><div class="mtile"><span>Orders delivered late</span><b> <!--8.1-->0%</b></div><div class="mtile"><span>Avg rating, late vs on time</span><b> In-progress</b></div></div>
+        <ul class="pfind">
+          <li><b>Delivery:</b> <!-- average 12.6 days from purchase to doorstep.--> In-progress</li>
+          <li><b>Loyalty:</b>  <!--only about 3% of customers ever order again.--> In-progress</li>
+          <li><b>Method:</b> <!-- problem rows were flagged rather than deleted, and every change is logged.--> In-progress</li>
+        </ul>
+        <ul class="ptags"><li>Python</li><li>Pandas</li><li>ETL</li><li>EDA</li></ul>
+        <a class="btn btn-out btn-sm" href="https://github.com/vvraj00480-debug" target="_blank" rel="noopener">View on GitHub ↗</a>
+      </div>
+      <div class="pviz"><div class="tile" style="--tile:#0A0A0A"><i style="--h:90%"></i><i style="--h:78%"></i><i style="--h:62%"></i><i style="--h:48%"></i><i style="--h:36%"></i></div></div>
+    </article>
+    <!-- HIDDEN PROJECT TEMPLATES: copy one of these out of the comment and fill it in when you have a real project.
+    <article class="pcard reveal">
+      <div class="pbody">
+        <p class="cat">Customer analytics</p>
+        <h3>Churn Analysis &amp; Prediction</h3>
+        <p class="pdesc">One sentence on what you did and why it mattered.</p>
+        <div class="mrow"><div class="mtile"><span>Metric name</span><b>00%</b></div><div class="mtile"><span>Metric name</span><b>0.00</b></div></div>
+        <ul class="ptags"><li>Python</li><li>scikit-learn</li><li>Jupyter</li></ul>
+        <a class="btn btn-out btn-sm" href="PASTE-LINK" target="_blank" rel="noopener">View project ↗</a>
+      </div>
+      <div class="pviz shot"><img src="projects/YOUR-IMAGE.webp" alt="Describe the picture" loading="lazy"></div>
+    </article>
+    <article class="pcard reveal">
+      <div class="pbody">
+        <p class="cat">Marketing analytics</p>
+        <h3>Attribution Model</h3>
+        <p class="pdesc">One sentence on what you did and why it mattered.</p>
+        <ul class="ptags"><li>SQL</li><li>Power BI</li></ul>
+        <a class="btn btn-out btn-sm" href="PASTE-LINK" target="_blank" rel="noopener">View project ↗</a>
+      </div>
+    </article>
+    -->
+  </div>
+</section>
+
+<!-- ============ WHO DOES WHAT IN DATA ============ -->
+<section class="band alt" id="roles">
+  <div class="wrap">
+    <h2 class="reveal">Who does what in data</h2>
+    <p class="lead lead-dk reveal">A data team is a relay. Each role hands something cleaner, smarter or faster to the next, from the person who keeps data right to the one who predicts with it. Tap a role to see what they do, what they ask and how technical the job gets.</p>
+    <div class="tabs reveal" data-tabs>
+      <div class="tablist" role="tablist" aria-label="Data roles">
+        <button type="button" role="tab" id="t-worker" aria-controls="p-worker" aria-selected="false" tabindex="-1"><small>Keeps</small>Data Worker</button>
+        <button type="button" role="tab" id="t-analyst" aria-controls="p-analyst" aria-selected="true" data-default><small>Explains</small><span>Data Analyst <span class="me">me</span></span></button>
+        <button type="button" role="tab" id="t-bi" aria-controls="p-bi" aria-selected="false" tabindex="-1"><small>Shares</small>BI Developer</button>
+        <button type="button" role="tab" id="t-ae" aria-controls="p-ae" aria-selected="false" tabindex="-1"><small>Models</small>Analytics Engineer</button>
+        <button type="button" role="tab" id="t-de" aria-controls="p-de" aria-selected="false" tabindex="-1"><small>Moves</small>Data Engineer</button>
+        <button type="button" role="tab" id="t-mle" aria-controls="p-mle" aria-selected="false" tabindex="-1"><small>Deploys</small>ML Engineer</button>
+        <button type="button" role="tab" id="t-ds" aria-controls="p-ds" aria-selected="false" tabindex="-1"><small>Predicts</small>Data Scientist</button>
+      </div>
+
+      <div class="panel" role="tabpanel" id="p-worker" aria-labelledby="t-worker" hidden>
+        <div class="panel-in">
+          <div>
+            <p class="eyebrow">In plain words</p>
+            <p class="plain">Keeps the data accurate and flowing. Entering, checking, tagging and updating records so everyone else can trust what they see.</p>
+            <p class="eyebrow">Asks</p><p class="ask">“Is this record correct and complete?”</p>
+            <p class="eyebrow">Delivers</p><p class="d">Clean, up-to-date records and fewer errors downstream.</p>
+            <ul class="tags"><li>Excel</li><li>Google Sheets</li><li>CRM / ERP forms</li><li>Data entry tools</li></ul>
+          </div>
+          <div class="meters" aria-label="Rough skill mix">
+            <div class="meter"><span>Business</span><i><b style="--v:2"></b></i></div>
+            <div class="meter"><span>Code</span><i><b style="--v:1"></b></i></div>
+            <div class="meter"><span>Statistics</span><i><b style="--v:1"></b></i></div>
+            <p class="note">A rough guide, not a rulebook.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" role="tabpanel" id="p-analyst" aria-labelledby="t-analyst">
+        <div class="panel-in">
+          <div>
+            <p class="eyebrow">In plain words</p>
+            <p class="plain">Answers business questions with data. Pulls it, cleans it, finds the pattern and explains it so a decision-maker can act.</p>
+            <p class="eyebrow">Asks</p><p class="ask">“What happened, and why?”</p>
+            <p class="eyebrow">Delivers</p><p class="d">Dashboards, reports and clear recommendations.</p>
+            <ul class="tags"><li>SQL</li><li>Excel</li><li>Power BI / Tableau</li><li>Python or R basics</li></ul>
+          </div>
+          <div class="meters" aria-label="Rough skill mix">
+            <div class="meter"><span>Business</span><i><b style="--v:5"></b></i></div>
+            <div class="meter"><span>Code</span><i><b style="--v:3"></b></i></div>
+            <div class="meter"><span>Statistics</span><i><b style="--v:3"></b></i></div>
+            <p class="note">A rough guide, not a rulebook.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" role="tabpanel" id="p-bi" aria-labelledby="t-bi" hidden>
+        <div class="panel-in">
+          <div>
+            <p class="eyebrow">In plain words</p>
+            <p class="plain">Builds the dashboards and shared metrics a whole company relies on, so people can answer their own questions.</p>
+            <p class="eyebrow">Asks</p><p class="ask">“How do we let everyone see the same numbers?”</p>
+            <p class="eyebrow">Delivers</p><p class="d">Governed dashboards and self-serve reports.</p>
+            <ul class="tags"><li>Power BI</li><li>Tableau</li><li>Looker</li><li>DAX</li><li>SQL</li></ul>
+          </div>
+          <div class="meters" aria-label="Rough skill mix">
+            <div class="meter"><span>Business</span><i><b style="--v:4"></b></i></div>
+            <div class="meter"><span>Code</span><i><b style="--v:3"></b></i></div>
+            <div class="meter"><span>Statistics</span><i><b style="--v:2"></b></i></div>
+            <p class="note">A rough guide, not a rulebook.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" role="tabpanel" id="p-ae" aria-labelledby="t-ae" hidden>
+        <div class="panel-in">
+          <div>
+            <p class="eyebrow">In plain words</p>
+            <p class="plain">Turns raw tables into clean, tested, documented models that analysts can build on without redoing the cleanup.</p>
+            <p class="eyebrow">Asks</p><p class="ask">“Does everyone get the same answer from the same data?”</p>
+            <p class="eyebrow">Delivers</p><p class="d">Tested, versioned data models.</p>
+            <ul class="tags"><li>SQL</li><li>dbt</li><li>Git</li><li>Cloud warehouse</li></ul>
+          </div>
+          <div class="meters" aria-label="Rough skill mix">
+            <div class="meter"><span>Business</span><i><b style="--v:3"></b></i></div>
+            <div class="meter"><span>Code</span><i><b style="--v:4"></b></i></div>
+            <div class="meter"><span>Statistics</span><i><b style="--v:2"></b></i></div>
+            <p class="note">A rough guide, not a rulebook.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" role="tabpanel" id="p-de" aria-labelledby="t-de" hidden>
+        <div class="panel-in">
+          <div>
+            <p class="eyebrow">In plain words</p>
+            <p class="plain">Builds the pipes. Collects data from many sources, moves it, stores it and keeps it flowing reliably at scale.</p>
+            <p class="eyebrow">Asks</p><p class="ask">“How does data get here, fast and without breaking?”</p>
+            <p class="eyebrow">Delivers</p><p class="d">Pipelines, warehouses and data lakes.</p>
+            <ul class="tags"><li>Python</li><li>Spark</li><li>Airflow</li><li>Kafka</li><li>AWS / GCP / Azure</li></ul>
+          </div>
+          <div class="meters" aria-label="Rough skill mix">
+            <div class="meter"><span>Business</span><i><b style="--v:2"></b></i></div>
+            <div class="meter"><span>Code</span><i><b style="--v:5"></b></i></div>
+            <div class="meter"><span>Statistics</span><i><b style="--v:1"></b></i></div>
+            <p class="note">A rough guide, not a rulebook.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" role="tabpanel" id="p-mle" aria-labelledby="t-mle" hidden>
+        <div class="panel-in">
+          <div>
+            <p class="eyebrow">In plain words</p>
+            <p class="plain">Takes models out of notebooks and runs them in production, monitored and fast, for real users.</p>
+            <p class="eyebrow">Asks</p><p class="ask">“How do we run this model reliably every day?”</p>
+            <p class="eyebrow">Delivers</p><p class="d">Deployed, monitored machine learning systems.</p>
+            <ul class="tags"><li>Python</li><li>Docker</li><li>MLOps tools</li><li>Cloud</li></ul>
+          </div>
+          <div class="meters" aria-label="Rough skill mix">
+            <div class="meter"><span>Business</span><i><b style="--v:2"></b></i></div>
+            <div class="meter"><span>Code</span><i><b style="--v:5"></b></i></div>
+            <div class="meter"><span>Statistics</span><i><b style="--v:3"></b></i></div>
+            <p class="note">A rough guide, not a rulebook.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel" role="tabpanel" id="p-ds" aria-labelledby="t-ds" hidden>
+        <div class="panel-in">
+          <div>
+            <p class="eyebrow">In plain words</p>
+            <p class="plain">Uses statistics and machine learning to predict what is next and to test what actually works.</p>
+            <p class="eyebrow">Asks</p><p class="ask">“What will happen, and what should we do about it?”</p>
+            <p class="eyebrow">Delivers</p><p class="d">Models, experiments and forecasts.</p>
+            <ul class="tags"><li>Python</li><li>R</li><li>Statistics</li><li>scikit-learn</li><li>Experimentation</li></ul>
+          </div>
+          <div class="meters" aria-label="Rough skill mix">
+            <div class="meter"><span>Business</span><i><b style="--v:3"></b></i></div>
+            <div class="meter"><span>Code</span><i><b style="--v:4"></b></i></div>
+            <div class="meter"><span>Statistics</span><i><b style="--v:5"></b></i></div>
+            <p class="note">A rough guide, not a rulebook.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JOURNEY ============ -->
+<!-- HIDDEN: remove the word hidden below to show "My journey in data" again -->
+<section class="band" id="journey" hidden>
+  <div class="wrap">
+    <h2 class="reveal">My journey in data</h2>
+    <!-- TODO: replace years, titles and dates with your real timeline -->
+    <div class="tabs reveal" data-tabs>
+      <div class="tablist" role="tablist" aria-label="Years">
+        <button type="button" role="tab" id="y-2025" aria-controls="j-2025" aria-selected="true" data-default>2025</button>
+        <button type="button" role="tab" id="y-2024" aria-controls="j-2024" aria-selected="false" tabindex="-1">2024</button>
+        <button type="button" role="tab" id="y-2023" aria-controls="j-2023" aria-selected="false" tabindex="-1">2023</button>
+        <button type="button" role="tab" id="y-2022" aria-controls="j-2022" aria-selected="false" tabindex="-1">2022</button>
+      </div>
+      <div class="panel" role="tabpanel" id="j-2025" aria-labelledby="y-2025">
+        <ul class="timeline">
+          <li><span class="when">Month 2025</span><h3>Milestone title</h3><p>One line about what happened and what you learned.</p></li>
+          <li><span class="when">Month 2025</span><h3>Milestone title</h3><p>One line about what happened and what you learned.</p></li>
+        </ul>
+      </div>
+      <div class="panel" role="tabpanel" id="j-2024" aria-labelledby="y-2024" hidden>
+        <ul class="timeline">
+          <li><span class="when">Month 2024</span><h3>Milestone title</h3><p>One line about what happened and what you learned.</p></li>
+          <li><span class="when">Month 2024</span><h3>Milestone title</h3><p>One line about what happened and what you learned.</p></li>
+        </ul>
+      </div>
+      <div class="panel" role="tabpanel" id="j-2023" aria-labelledby="y-2023" hidden>
+        <ul class="timeline">
+          <li><span class="when">Month 2023</span><h3>Milestone title</h3><p>One line about what happened and what you learned.</p></li>
+        </ul>
+      </div>
+      <div class="panel" role="tabpanel" id="j-2022" aria-labelledby="y-2022" hidden>
+        <ul class="timeline">
+          <li><span class="when">Month 2022</span><h3>Milestone title</h3><p>One line about what happened and what you learned.</p></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROCESS ============ -->
+<section class="band alt" id="process">
+  <div class="wrap">
+    <h2 class="reveal">My analysis process</h2>
+    <ol class="grid steps">
+      <li class="card reveal"><span class="num">01</span><h3>Ask</h3><p>Pin down the real question and the decision it feeds.</p></li>
+      <li class="card reveal"><span class="num">02</span><h3>Collect</h3><p>Find the right sources and check they can answer it.</p></li>
+      <li class="card reveal"><span class="num">03</span><h3>Clean</h3><p>Fix gaps, duplicates and surprises. Write down every assumption.</p></li>
+      <li class="card reveal"><span class="num">04</span><h3>Explore</h3><p>Look for patterns, outliers and the story hiding in the rows.</p></li>
+      <li class="card reveal"><span class="num">05</span><h3>Model &amp; visualize</h3><p>Test the idea, then show it in the simplest honest chart.</p></li>
+      <li class="card reveal"><span class="num">06</span><h3>Share &amp; iterate</h3><p>Hand over a clear recommendation, then refine with feedback.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ WHEN CAN I HELP ============ -->
+<section class="band" id="help">
+  <div class="wrap">
+    <h2 class="reveal">When can I help?</h2>
+    <div class="grid help">
+      <article class="card reveal"><span class="ico" aria-hidden="true">🧹</span><h3>Nobody trusts the numbers?</h3><p>I trace each metric back to its source and fix the definitions.</p></article>
+      <article class="card reveal"><span class="ico" aria-hidden="true">📊</span><h3>Drowning in spreadsheets?</h3><p>I turn manual reports into one refreshed dashboard.</p></article>
+      <article class="card reveal"><span class="ico" aria-hidden="true">🎯</span><h3>Unsure what to measure?</h3><p>I help pick the few metrics that actually move the business.</p></article>
+      <article class="card reveal"><span class="ico" aria-hidden="true">🧪</span><h3>Need a test result read?</h3><p>I analyse your experiment and say clearly what it means.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CURRENTLY LEARNING ============ -->
+<section class="band alt" id="learning">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Currently learning</h2><span class="more">What I'm working on next</span></div>
+    <!-- TODO: edit these to match what you are really learning -->
+    <div class="grid help">
+      <article class="card reveal"><span class="ico" aria-hidden="true">🗄️</span><h3>SQL &amp; data modelling</h3><p>Joins, window functions and CTEs, plus how data flows from source tables to a clean model. Practising on the Olist e-commerce data.</p></article>
+      <article class="card reveal"><span class="ico" aria-hidden="true">📈</span><h3>Power BI in depth</h3><p>DAX, relationships, filter context and Power Query, so dashboards stand on a solid model, not just good looks.</p></article>
+      <article class="card reveal"><span class="ico" aria-hidden="true">🐍</span><h3>Python for analysis</h3><p>Pandas for cleaning and exploring data, and notebooks that explain each step.</p></article>
+      <article class="card reveal"><span class="ico" aria-hidden="true">🗣️</span><h3>Communication &amp; problem-solving</h3><p>Asking the right business question and explaining findings so non-technical people can act on them.</p></article>
+      <article class="card reveal"><span class="ico" aria-hidden="true">🤖</span><h3>Gen AI for data analytics</h3><p>Using AI tools to learn faster, write and review code and solve problems, while always checking the output myself.</p></article>
+      <article class="card reveal"><span class="ico" aria-hidden="true">🧪</span><h3>Statistics for analysts</h3><p>Confidence intervals, hypothesis tests and knowing when a difference is just noise.</p></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ME ============ -->
+<section class="band" id="about">
+  <div class="wrap">
+    <h2 class="reveal">About me</h2>
+    <div class="about-grid">
+      <!-- TODO: swap this block for your photo: <img class="photo" src="me.webp" alt="Vishnuvardhan Raj" width="520" height="650" loading="lazy"> -->
+      <div class="photo reveal" role="img" aria-label="Photo placeholder"><span>VR</span></div>
+      <div class="reveal">
+        <p class="big">I’m Vishnuvardhan Raj, a data analyst who likes clear questions, clean tables and charts that make people say “oh, that’s obvious.”</p>
+        <p class="about-p">I’m a 2025 B.Tech graduate with a background in Data Science and a growing passion for data analytics. I enjoy exploring datasets, discovering patterns, and transforming raw information into meaningful insights. I’m continuously developing my skills in Python, SQL, Excel, and Power BI, and I’m looking forward to starting my career in data analytics, learning from real-world challenges, and contributing to impactful projects.</p>
+        <p class="about-p"><em>Just a background character in a constantly changing story, trying to turn big dreams into reality while exploring everything life has to offer.</em></p>
+      </div>
+      <ul class="facts reveal">
+        <li><span>Based in</span><b>Hyderabad, India</b></li>
+        <li><span>Education</span><b>Bachelor's Degree in Data Science, St. Mary's Engineering College (JNTUH Affiliated)</b></li>
+        <li><span>Focus</span><b>Data Science | Data Analytics | Python | SQL | Business Intelligence</b></li>
+        <li><span>Languages</span><b>English, Telugu, Hindi, (Currently Learning Japanese)</b></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS ============ -->
+<section class="band alt" id="certifications">
+  <div class="wrap">
+    <h2 class="reveal">Certifications</h2>
+    <!-- Cards are built automatically from the public "cert" GitHub repo (see script.js). Upload a certificate there and it appears here. -->
+    <div class="grid certs" id="certGrid" aria-live="polite">
+      <p class="mute" id="certMsg">Loading certificates…</p>
+    </div>
+    <p class="note cert-note reveal">This list updates itself when new certificates are added to my <a href="https://github.com/vvraj00480-debug/cert" target="_blank" rel="noopener">certificates repository</a>.</p>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="band" id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Skills</h2><span class="more">Bars show my own rough level</span></div>
+    <!-- TODO: edit names and levels (--l is 1 to 5) -->
+    <div class="grid skills">
+      <article class="card reveal"><p class="eyebrow">Query &amp; code</p>
+        <ul class="levels"><li>SQL<i class="lv" style="--l:3"></i></li><li>Python<i class="lv" style="--l:3"></i></li><li>Excel<i class="lv" style="--l:4"></i></li><li>Jupyter Notebook<i class="lv" style="--l:3"></i></li></ul></article>
+      <article class="card reveal"><p class="eyebrow">BI &amp; visualization</p>
+        <ul class="levels"><li>Power BI<i class="lv" style="--l:3"></i></li><li>Power Query<i class="lv" style="--l:3"></i></li><li>Tableau<i class="lv" style="--l:3"></i></li></ul></article>
+      <article class="card reveal"><p class="eyebrow">Tools &amp; workflow</p>
+        <ul class="levels"><li>Git<i class="lv" style="--l:4"></i></li></ul></article>
+    <!-- HIDDEN skills (copy back in when ready): R, Looker Studio, Matplotlib / Plotly, BigQuery, Snowflake, dbt, and the Methods card (A/B testing, Regression, Forecasting, Data storytelling) -->
+    </div>
+    <!-- TODO: IMPROVEMENT SLOT -->
+    <div class="slot reveal"><blockquote>“A jack of all trades is a master of none, but oftentimes better than a master of one.”</blockquote></div>
+  </div>
+</section>
+
+<!-- ============ NOW ============ -->
+<!--
+  Edit these data- attributes to update the whole Now section:
+  data-employed  "true" or "false"   (flips the switch and the badge in the hero)
+  data-role / data-company            shown when employed
+  data-updated   YYYY-MM
+-->
+<section class="band alt" id="now" data-employed="false" data-role="" data-company="" data-updated="2026-11">
+  <div class="wrap">
+    <div class="sec-head reveal"><h2>Now</h2><span class="more" id="updated">Updated Nov 2026</span></div>
+    <div class="grid nowgrid">
+      <article class="card now-card reveal">
+        <p class="eyebrow">Currently</p>
+        <div class="sw-row">
+          <button type="button" class="switch" id="empSwitch" role="switch" aria-checked="false" aria-readonly="true" aria-label="Open to work" tabindex="-1"><span></span></button>
+          <b id="empLabel">Open to work</b>
+        </div>
+        <p class="mute" id="empSub">Looking for my next data role. Say hello.</p>
+      </article>
+
+      <article class="card now-card reveal" id="readingCard">
+        <p class="eyebrow">Reading list</p>
+        <h3>Papers I'm reading</h3>
+        <!-- TODO: one <li> per paper. Copy the example line, fill it in, and the empty message disappears on its own.
+             <li><a href="PAPER-LINK" target="_blank" rel="noopener"><b>Paper title</b></a><span>Authors · Journal · Year</span></li> -->
+        <ul class="reads" id="readList"></ul>
+        <p class="mute" id="readEmpty">My reading list is on its way.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="band" id="contact">
+  <div class="wrap">
+    <div class="ctaband reveal">
+      <h2>Got data and a question? Let’s find the <span class="green">answer.</span></h2>
+      <div class="cta">
+        <!-- TODO: swap in your booking link (Calendly, Cal.com, ...) if you have one -->
+        <a class="btn btn-white" href="mailto:Vishnuvardhanraj.enla@gmail.com">Drop me a line</a>
+        <a class="btn btn-line" href="mailto:Vishnuvardhanraj.enla@gmail.com">Vishnuvardhanraj.enla@gmail.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <div>
+      <a class="logo" href="#top"><i class="ld"></i>Vishnuvardhan Raj</a>
+      <p class="mute">Hyderabad, India. Remote-friendly, flexible hours.</p>
+    </div>
+    <nav aria-label="Explore"><p class="eyebrow">Explore</p><a href="#top">Home</a><a href="#about">About me</a><a href="#certifications">Certifications</a><a href="#skills">Skills</a><a href="#now">Now</a></nav>
+    <nav aria-label="Elsewhere"><p class="eyebrow">Elsewhere</p><a href="https://www.linkedin.com/in/vishnuvardhanrajenla/" target="_blank" rel="me noopener">LinkedIn</a><a href="https://github.com/vvraj00480-debug" target="_blank" rel="me noopener">GitHub</a><a href="https://www.kaggle.com/vishnuvardhan004" target="_blank" rel="me noopener">Kaggle</a></nav>
+  </div>
+  <div class="wrap foot-bar"><span>© <span id="year">2026</span> Vishnuvardhan Raj</span><span>Built by hand. No frameworks, no trackers.</span></div>
+</footer>
+
+<!-- Floating social dock. TODO: replace the # links -->
+<nav class="dock" aria-label="Social links">
+  <a href="https://www.linkedin.com/in/vishnuvardhanrajenla/" target="_blank" rel="me noopener" aria-label="LinkedIn">in</a>
+  <a href="https://github.com/vvraj00480-debug" target="_blank" rel="me noopener" aria-label="GitHub">GH</a>
+  <a href="https://www.kaggle.com/vishnuvardhan004" target="_blank" rel="me noopener" aria-label="Kaggle">K</a>
+</nav>
+
+<script src="script.js" defer></script>
+</body>
+</html>
